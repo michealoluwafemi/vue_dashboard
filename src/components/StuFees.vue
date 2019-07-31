@@ -1,0 +1,119 @@
+<template>
+  <div class="padded">
+    <img src="../assets/icons/student-fee.png" />
+    <span class="title">Student Fees</span>
+    <div class="st-f">
+      <div class="box" v-for="(card, id) in cardLists"  :key="id">
+        <div :class="card.cardClass">
+          <img :src="card.imgUrl" :title="card.title" :alt="card.title"/>
+        </div>
+        <div>
+          <span>{{ card.title }}</span>
+          <p class="c-text">{{ card.amt }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'StuFees',
+  props: {
+
+  },
+  data() {
+    return {
+      cardLists: [
+        {
+          imgUrl: "../assets/icons/approve-invoice.png",
+          title: "invoiced",
+          amt: "#2,300,000.00",
+          cardClass: "img-bg div-primary"
+        },
+        {
+          imgUrl: "../assets/icons/approve-invoice.png",
+          title: "recieved",
+          amt: "#1,700,000.00",
+          cardClass: "img-bg div-success"
+        },
+        {
+          imgUrl: "../assets/icons/approve-invoice.png",
+          title: "pending",
+          amt: "#6,000,000.00",
+          cardClass: "img-bg div-warning"
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  .padded {
+    margin-top: 30px;
+  }
+  .padded .title {
+    margin-left: 14px;
+    text-transform: uppercase;
+    font-family: Khula;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #3B3B3B;
+  }
+  .st-f {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    overflow: auto;
+    margin-top: 9px;
+  }
+  .st-f .box {
+    height: 98px;
+    background: #FFF;
+    border: 1px solid rgba(189, 189, 189, 0.25);
+    box-shadow: 0px 4.71062px 23.5531px rgba(0, 0, 0, 0.07);
+    border-radius: 4.71062px;
+    padding: 11px 11px 11px 26px;
+    direction: flex;
+    justify-content: space-between;
+  }
+  .box .img-bg {
+    height: 100%;
+    width: 76px;
+    border-radius: 5px;
+    float: right;
+    text-align: center;
+  }
+  .img-bg img {
+    padding-top: 18px;
+  }
+  .box span {
+    color: #BDBDBD;
+    text-transform: uppercase;
+    font-family: Khula;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .box .c-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #2D74DA;
+    margin-top: 6px;
+  }
+  .div-primary {
+    background: #1C75BB;
+  }
+  .div-success {
+    background: #17BF5F;
+  }
+  .div-warning {
+    background: #FAD961;
+  }
+</style>
