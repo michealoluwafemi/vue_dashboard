@@ -3,14 +3,38 @@
     <img src="../assets/icons/student-fee.png" />
     <span class="title">Student Fees</span>
     <div class="st-f">
-      <div class="box" v-for="(card, id) in cardLists"  :key="id">
-        <div :class="card.cardClass">
-          <img :src="card.imgUrl" :title="card.title" :alt="card.title"/>
-        </div>
-        <div>
-          <span>{{ card.title }}</span>
-          <p class="c-text">{{ card.amt }}</p>
-        </div>
+      <div class="box">
+        <router-link to="/invoiced">
+          <div class="img-bg div-primary">
+            <img src="../assets/icons/approve-invoice.png" title="invoiced" alt="invoiced"/>
+          </div>
+          <div>
+            <span>invoiced</span>
+            <p class="c-text">#2,300,000.00</p>
+          </div>
+        </router-link>
+      </div>
+      <div class="box">
+        <router-link to="/recieved">
+          <div class="img-bg div-success">
+            <img src="../assets/icons/money.png" title="recieved" alt="recieved"/>
+          </div>
+          <div>
+            <span>recieved</span>
+            <p class="c-text">#1,700,000.00</p>
+          </div>
+        </router-link>
+      </div>
+      <div class="box">
+        <router-link to="/pending">
+          <div class="img-bg div-warning">
+            <img src="../assets/icons/sand-clock.png" title="pending" alt="pending"/>
+          </div>
+          <div>
+            <span>pending</span>
+            <p class="c-text">#6,000,000.00</p>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>

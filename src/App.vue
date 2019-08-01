@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <div class="d-flex app-container">
-      <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-      <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
       <Sidebar />
       <div class="center">
         <div class="d-flex top-side">
@@ -20,11 +18,7 @@
             </div>
           </div>
         </div>
-        <StuFees />
-        <div class="d-flex ss">
-          <Perf />
-          <Stats />
-        </div>
+        <router-view />
       </div>
     </div>
   </div>
@@ -34,18 +28,18 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import Navbar from './components/Navbar.vue'
 import Sidebar from  './components/Sidebar.vue'
-import StuFees from './components/StuFees.vue'
-import Perf from './components/Perf.vue'
-import Stats from './components/Stats.vue'
+// import StuFees from './components/StuFees.vue'
+// import Perf from './components/Perf.vue'
+// import Stats from './components/Stats.vue'
 
 export default {
   name: 'app',
   components: {
-    // HelloWorld
-    Sidebar,
-    StuFees,
-    Perf,
-    Stats
+    // HelloWorld,
+    Sidebar
+    // StuFees,
+    // Perf,
+    // Stats
   }
 }
 </script>

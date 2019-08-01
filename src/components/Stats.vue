@@ -58,7 +58,6 @@ export default {
 <style scoped>
 .padded {
   margin-top: 30px;
-  margin-left: 20px;
 }
 .padded .title {
   margin-left: 14px;
@@ -108,6 +107,7 @@ export default {
 .stat-card .pad {
   margin-left: 26px;
   margin-top: 8px;
+  width: 100px;
 }
 .right {
   width: 90px;

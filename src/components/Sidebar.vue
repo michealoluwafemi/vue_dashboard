@@ -7,24 +7,28 @@
     <ul class="nav-links">
       <li class="link">
         <router-link
-          to=""
-        >Dashboard
+          to="/"
+        ><img src="../assets/icons/dashboard.png" />Dashboard
         </router-link>
       </li>
-      <li class="link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="link dropdown-toggle" data-toggle="dropdown">
         <router-link
           to=""
-          >Students
+          ><i class="fas fa-user-graduate"></i>Students
         </router-link>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Class 1</a></li>
           <li><a class="dropdown-item" href="#">Class 1</a></li>
         </ul>
       </li>
-      <li class="link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="link dropdown-toggle" data-toggle="dropdown">
         <router-link
           to=""
         >Employees
         </router-link>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Employees 1</a></li>
+        </ul>
       </li>
       <li class="link">
         <router-link
@@ -32,17 +36,23 @@
         >Guardians
         </router-link>
       </li>
-      <li class="link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="link dropdown-toggle" id="dropdownMenuLink">
         <router-link
           to=""
         >Attendance
         </router-link>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Attendance 1</a></li>
+        </ul>
       </li>
-      <li class="link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="link dropdown-toggle" id="dropdownMenuLink">
         <router-link
           to=""
         >Finance
         </router-link>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Finance 1</a></li>
+        </ul>
       </li>
       <li class="link">
         <router-link
@@ -68,11 +78,14 @@
         >SMS
         </router-link>
       </li>
-      <li class="link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="link dropdown-toggle" id="dropdownMenuLink">
         <router-link
           to=""
         >Events
         </router-link>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Event 1</a></li>
+        </ul>
       </li>
       <!-- <li class="link" v-for="(link, key) in links" :key="key">
         <router-link
@@ -81,7 +94,20 @@
           {{ link.title.charAt(0).toUpperCase() + link.title.slice(1) }}
         </router-link>
       </li> -->
+      <hr class="hr" />
+      <li class="link">
+        <route-link
+          to=""
+        >Settings
+        </route-link>
+      </li>
     </ul>
+
+    <ul class="horizontal">
+      <li class="wrap">Help</li>
+      <li>Terms.Privacy</li>
+    </ul>
+
   </aside>
 </template>
 
@@ -107,6 +133,29 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.horizontal {
+  display: inline-flex;
+}
+.horizontal li {
+  list-style: none;
+  height: 30px;
+}
+.horizontal .wrap {
+  font-family: Khula;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  background: #FFF;
+  color: #1C75BB;
+  padding: 5px 14px 5px 14px;
+  border-radius: 17px;
+  margin-right: 15px;
+}
+.hr {
+  background: #FFF;
+  height: 0.2px;
+}
 .dropdown {
   margin-left: 76px !important;
 }
@@ -114,6 +163,9 @@ export default {
   background: #FFF;color: #3B3B3B;
   height: 70px;
   padding-top: 17px;
+}
+.dropdown-menu {
+  background: linear-gradient(136.25deg, #1B75BB 0%, #00ADEE 100%);
 }
 .app-sidebar {
   background: linear-gradient(136.25deg, #1B75BB 0%, #00ADEE 100%);
@@ -136,8 +188,12 @@ export default {
 .link a {
   color: #FFF !important;
   text-decoration: none;
+  font-family: Khula;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
 }
-.link:hover {
+.link:hover, .dropdown-item:hover {
   cursor: pointer;
   background: #1C75BB;
   border-radius: 4px;
