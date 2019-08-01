@@ -8,7 +8,12 @@
       <Perf />
     </div>
     <div>
-      <Absent />
+      <div class="recentTransactions">
+        <RecentTransactions />
+      </div>
+      <div class="absent">
+        <Absent />
+      </div>
     </div>
   </div>
 </template>
@@ -20,6 +25,7 @@ import StuFees from '@/components/StuFees.vue'
 import Perf from '@/components/Perf.vue'
 import Stats from '@/components/Stats.vue'
 import Absent from '@/components/Absent.vue'
+import RecentTransactions from '@/components/RecentTransactions.vue'
 
 export default {
   name: 'home',
@@ -27,7 +33,8 @@ export default {
     StuFees,
     Perf,
     Stats,
-    Absent
+    Absent,
+    RecentTransactions
   }
 }
 </script>
@@ -39,5 +46,8 @@ export default {
   float: right;
 }
 .perf {
+}
+.absent {
+  float: left;
 }
 </style>

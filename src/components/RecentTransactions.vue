@@ -1,18 +1,19 @@
 <template>
   <div class="padded">
-    <img src="../assets/icons/student-fee.png" />
-    <span class="title">Student Fees</span>
-    <div class="img">
-      <img src="../assets/images/performance.png" />
+    <div class="table-card">
     </div>
+    <img src="../assets/icons/student-fee.png" />
+    <span class="title">Recent Transactions</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'perf',
-  props: {
+  name: 'recentTransactions',
+  data() {
+    return {
 
+    }
   }
 }
 </script>
@@ -34,6 +35,13 @@ export default {
 }
 .padded .img {
   margin-top: 10px;
-  overflow: hidden;
+}
+.table-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(189, 189, 189, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 4.71062px 23.5531px rgba(0, 0, 0, 0.07);
+  border-radius: 4.71062px;
+  margin-top: 10px;
 }
 </style>

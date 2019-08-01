@@ -56,7 +56,7 @@ export default {
 .app-container {
 }
 .center {
-  padding-top: 17px;
+  padding-top: 15px;
   padding-left: 27px;
   padding-right: 27px;
   overflow: auto;

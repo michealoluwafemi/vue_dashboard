@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'Absent',
+  name: 'absent',
   props: {
 
   }

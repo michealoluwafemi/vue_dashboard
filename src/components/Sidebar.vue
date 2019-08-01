@@ -14,7 +14,7 @@
       <li class="link dropdown-toggle" data-toggle="dropdown">
         <router-link
           to=""
-          ><i class="fas fa-user-graduate"></i>Students
+          ><img src="../assets/icons/student.png" />Students
         </router-link>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Class 1</a></li>
@@ -24,7 +24,7 @@
       <li class="link dropdown-toggle" data-toggle="dropdown">
         <router-link
           to=""
-        >Employees
+        ><img src="../assets/icons/employer.png" />Employees
         </router-link>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Employees 1</a></li>
@@ -33,13 +33,13 @@
       <li class="link">
         <router-link
           to=""
-        >Guardians
+        ><img src="../assets/icons/guardian.png" />Guardians
         </router-link>
       </li>
       <li class="link dropdown-toggle" id="dropdownMenuLink">
         <router-link
           to=""
-        >Attendance
+        ><img src="../assets/icons/attendance.png" />Attendance
         </router-link>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Attendance 1</a></li>
@@ -48,7 +48,7 @@
       <li class="link dropdown-toggle" id="dropdownMenuLink">
         <router-link
           to=""
-        >Finance
+        ><img src="../assets/icons/finance.png" />Finance
         </router-link>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Finance 1</a></li>
@@ -57,31 +57,31 @@
       <li class="link">
         <router-link
           to=""
-        >Subjects
+        ><img src="../assets/icons/subject.png" />Subjects
         </router-link>
       </li>
       <li class="link">
         <router-link
           to=""
-        >Batches
+        ><img src="../assets/icons/batches.png" />Batches
         </router-link>
       </li>
       <li class="link">
         <router-link
           to=""
-        >Report Cards
+        ><img src="../assets/icons/report.png" />Report Cards
         </router-link>
       </li>
       <li class="link">
         <router-link
           to=""
-        >SMS
+        ><img src="../assets/icons/sms.png" />SMS
         </router-link>
       </li>
       <li class="link dropdown-toggle" id="dropdownMenuLink">
         <router-link
           to=""
-        >Events
+        ><img src="../assets/icons/events.png" />Events
         </router-link>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Event 1</a></li>
@@ -139,6 +139,11 @@ export default {
 .horizontal li {
   list-style: none;
   height: 30px;
+}
+li img {
+  margin-right: 20px;
+  width: 18px;
+  height: 18px;
 }
 .horizontal .wrap {
   font-family: Khula;

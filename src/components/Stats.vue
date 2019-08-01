@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'Stats',
+  name: 'stats',
   data() {
     return {
       statCard: [
@@ -57,7 +57,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .padded {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .padded .title {
   margin-left: 14px;
